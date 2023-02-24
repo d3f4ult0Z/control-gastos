@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FF76055630700230214F909 /* Pods_ControlGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6AEF476DEAF5A33C00E210 /* Pods_ControlGastos.framework */; };
+		DD931361294A47500068F88E /* MovementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93135F294A47500068F88E /* MovementTableViewCell.swift */; };
+		DD931362294A47500068F88E /* MovementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD931360294A47500068F88E /* MovementTableViewCell.xib */; };
+		DD9A6B4F294A2F3500F2CEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A6B4E294A2F3500F2CEFB /* AppDelegate.swift */; };
+		DD9A6B51294A2F3500F2CEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A6B50294A2F3500F2CEFB /* SceneDelegate.swift */; };
+		DD9A6B53294A2F3500F2CEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A6B52294A2F3500F2CEFB /* ViewController.swift */; };
+		DD9A6B56294A2F3500F2CEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9A6B54294A2F3500F2CEFB /* Main.storyboard */; };
+		DD9A6B58294A2F3900F2CEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9A6B57294A2F3900F2CEFB /* Assets.xcassets */; };
+		DD9A6B5B294A2F3900F2CEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9A6B59294A2F3900F2CEFB /* LaunchScreen.storyboard */; };
+		DDDDDC33294A38080061A750 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC32294A38080061A750 /* TabBarViewController.swift */; };
+		DDDDDC3F294A38F50061A750 /* MovementScreenViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC39294A38F50061A750 /* MovementScreenViewControllerPresenter.swift */; };
+		DDDDDC40294A38F50061A750 /* MovementScreenViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC3A294A38F50061A750 /* MovementScreenViewControllerRouter.swift */; };
+		DDDDDC41294A38F50061A750 /* MovementScreenViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC3B294A38F50061A750 /* MovementScreenViewControllerViewController.swift */; };
+		DDDDDC42294A38F50061A750 /* MovementScreenViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC3C294A38F50061A750 /* MovementScreenViewControllerProtocols.swift */; };
+		DDDDDC43294A38F50061A750 /* MovementScreenViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC3D294A38F50061A750 /* MovementScreenViewControllerInteractor.swift */; };
+		DDDDDC44294A38F50061A750 /* MovementScreenViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDDC3E294A38F50061A750 /* MovementScreenViewControllerViewController.xib */; };
+		DDDDDC4B294A39130061A750 /* AccountScreenViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC45294A39130061A750 /* AccountScreenViewControllerPresenter.swift */; };
+		DDDDDC4C294A39130061A750 /* AccountScreenViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC46294A39130061A750 /* AccountScreenViewControllerRouter.swift */; };
+		DDDDDC4D294A39130061A750 /* AccountScreenViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC47294A39130061A750 /* AccountScreenViewControllerViewController.swift */; };
+		DDDDDC4E294A39130061A750 /* AccountScreenViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC48294A39130061A750 /* AccountScreenViewControllerProtocols.swift */; };
+		DDDDDC4F294A39130061A750 /* AccountScreenViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC49294A39130061A750 /* AccountScreenViewControllerInteractor.swift */; };
+		DDDDDC50294A39130061A750 /* AccountScreenViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDDC4A294A39130061A750 /* AccountScreenViewControllerViewController.xib */; };
+		DDDDDC57294A392B0061A750 /* OptionsScreenViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC51294A392B0061A750 /* OptionsScreenViewControllerPresenter.swift */; };
+		DDDDDC58294A392B0061A750 /* OptionsScreenViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC52294A392B0061A750 /* OptionsScreenViewControllerRouter.swift */; };
+		DDDDDC59294A392B0061A750 /* OptionsScreenViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC53294A392B0061A750 /* OptionsScreenViewControllerViewController.swift */; };
+		DDDDDC5A294A392B0061A750 /* OptionsScreenViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC54294A392B0061A750 /* OptionsScreenViewControllerProtocols.swift */; };
+		DDDDDC5B294A392B0061A750 /* OptionsScreenViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC55294A392B0061A750 /* OptionsScreenViewControllerInteractor.swift */; };
+		DDDDDC5C294A392B0061A750 /* OptionsScreenViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDDC56294A392B0061A750 /* OptionsScreenViewControllerViewController.xib */; };
+		DDDDDC63294A39790061A750 /* UserScreenViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC5D294A39790061A750 /* UserScreenViewControllerPresenter.swift */; };
+		DDDDDC64294A39790061A750 /* UserScreenViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC5E294A39790061A750 /* UserScreenViewControllerRouter.swift */; };
+		DDDDDC65294A39790061A750 /* UserScreenViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC5F294A39790061A750 /* UserScreenViewControllerViewController.swift */; };
+		DDDDDC66294A39790061A750 /* UserScreenViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC60294A39790061A750 /* UserScreenViewControllerProtocols.swift */; };
+		DDDDDC67294A39790061A750 /* UserScreenViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDC61294A39790061A750 /* UserScreenViewControllerInteractor.swift */; };
+		DDDDDC68294A39790061A750 /* UserScreenViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDDC62294A39790061A750 /* UserScreenViewControllerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E6AEF476DEAF5A33C00E210 /* Pods_ControlGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		849658B2FCAD57EDF3B86210 /* Pods-ControlGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlGastos.release.xcconfig"; path = "Target Support Files/Pods-ControlGastos/Pods-ControlGastos.release.xcconfig"; sourceTree = "<group>"; };
+		DD93135F294A47500068F88E /* MovementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTableViewCell.swift; sourceTree = "<group>"; };
+		DD931360294A47500068F88E /* MovementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementTableViewCell.xib; sourceTree = "<group>"; };
+		DD9A6B4B294A2F3500F2CEFB /* ControlGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9A6B4E294A2F3500F2CEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD9A6B50294A2F3500F2CEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD9A6B52294A2F3500F2CEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD9A6B55294A2F3500F2CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9A6B57294A2F3900F2CEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9A6B5A294A2F3900F2CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9A6B5C294A2F3900F2CEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDDDC32294A38080061A750 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DDDDDC39294A38F50061A750 /* MovementScreenViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScreenViewControllerPresenter.swift; sourceTree = "<group>"; };
+		DDDDDC3A294A38F50061A750 /* MovementScreenViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScreenViewControllerRouter.swift; sourceTree = "<group>"; };
+		DDDDDC3B294A38F50061A750 /* MovementScreenViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScreenViewControllerViewController.swift; sourceTree = "<group>"; };
+		DDDDDC3C294A38F50061A750 /* MovementScreenViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScreenViewControllerProtocols.swift; sourceTree = "<group>"; };
+		DDDDDC3D294A38F50061A750 /* MovementScreenViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScreenViewControllerInteractor.swift; sourceTree = "<group>"; };
+		DDDDDC3E294A38F50061A750 /* MovementScreenViewControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementScreenViewControllerViewController.xib; sourceTree = "<group>"; };
+		DDDDDC45294A39130061A750 /* AccountScreenViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewControllerPresenter.swift; sourceTree = "<group>"; };
+		DDDDDC46294A39130061A750 /* AccountScreenViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewControllerRouter.swift; sourceTree = "<group>"; };
+		DDDDDC47294A39130061A750 /* AccountScreenViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewControllerViewController.swift; sourceTree = "<group>"; };
+		DDDDDC48294A39130061A750 /* AccountScreenViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewControllerProtocols.swift; sourceTree = "<group>"; };
+		DDDDDC49294A39130061A750 /* AccountScreenViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewControllerInteractor.swift; sourceTree = "<group>"; };
+		DDDDDC4A294A39130061A750 /* AccountScreenViewControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountScreenViewControllerViewController.xib; sourceTree = "<group>"; };
+		DDDDDC51294A392B0061A750 /* OptionsScreenViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScreenViewControllerPresenter.swift; sourceTree = "<group>"; };
+		DDDDDC52294A392B0061A750 /* OptionsScreenViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScreenViewControllerRouter.swift; sourceTree = "<group>"; };
+		DDDDDC53294A392B0061A750 /* OptionsScreenViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScreenViewControllerViewController.swift; sourceTree = "<group>"; };
+		DDDDDC54294A392B0061A750 /* OptionsScreenViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScreenViewControllerProtocols.swift; sourceTree = "<group>"; };
+		DDDDDC55294A392B0061A750 /* OptionsScreenViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScreenViewControllerInteractor.swift; sourceTree = "<group>"; };
+		DDDDDC56294A392B0061A750 /* OptionsScreenViewControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsScreenViewControllerViewController.xib; sourceTree = "<group>"; };
+		DDDDDC5D294A39790061A750 /* UserScreenViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewControllerPresenter.swift; sourceTree = "<group>"; };
+		DDDDDC5E294A39790061A750 /* UserScreenViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewControllerRouter.swift; sourceTree = "<group>"; };
+		DDDDDC5F294A39790061A750 /* UserScreenViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewControllerViewController.swift; sourceTree = "<group>"; };
+		DDDDDC60294A39790061A750 /* UserScreenViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewControllerProtocols.swift; sourceTree = "<group>"; };
+		DDDDDC61294A39790061A750 /* UserScreenViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewControllerInteractor.swift; sourceTree = "<group>"; };
+		DDDDDC62294A39790061A750 /* UserScreenViewControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserScreenViewControllerViewController.xib; sourceTree = "<group>"; };
+		F872D562D044A2711347C687 /* Pods-ControlGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControlGastos/Pods-ControlGastos.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9A6B48294A2F3500F2CEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF76055630700230214F909 /* Pods_ControlGastos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EB2A5F95BF42AC4693456F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E6AEF476DEAF5A33C00E210 /* Pods_ControlGastos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DCB66C4E1045220C439C27A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F872D562D044A2711347C687 /* Pods-ControlGastos.debug.xcconfig */,
+				849658B2FCAD57EDF3B86210 /* Pods-ControlGastos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD93135E294A46FE0068F88E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD93135F294A47500068F88E /* MovementTableViewCell.swift */,
+				DD931360294A47500068F88E /* MovementTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD9A6B42294A2F3500F2CEFB = {
+			isa = PBXGroup;
+			children = (
+				DD9A6B4D294A2F3500F2CEFB /* ControlGastos */,
+				DD9A6B4C294A2F3500F2CEFB /* Products */,
+				8DCB66C4E1045220C439C27A /* Pods */,
+				6EB2A5F95BF42AC4693456F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9A6B4C294A2F3500F2CEFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A6B4B294A2F3500F2CEFB /* ControlGastos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9A6B4D294A2F3500F2CEFB /* ControlGastos */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDDC38294A38C70061A750 /* UserScreen */,
+				DDDDDC36294A38A60061A750 /* OptionsScreen */,
+				DDDDDC35294A389B0061A750 /* AccountScreen */,
+				DDDDDC34294A388C0061A750 /* MovementScreen */,
+				DD9A6B4E294A2F3500F2CEFB /* AppDelegate.swift */,
+				DD9A6B50294A2F3500F2CEFB /* SceneDelegate.swift */,
+				DD9A6B52294A2F3500F2CEFB /* ViewController.swift */,
+				DD9A6B54294A2F3500F2CEFB /* Main.storyboard */,
+				DD9A6B57294A2F3900F2CEFB /* Assets.xcassets */,
+				DD9A6B59294A2F3900F2CEFB /* LaunchScreen.storyboard */,
+				DD9A6B5C294A2F3900F2CEFB /* Info.plist */,
+				DDDDDC32294A38080061A750 /* TabBarViewController.swift */,
+			);
+			path = ControlGastos;
+			sourceTree = "<group>";
+		};
+		DDDDDC34294A388C0061A750 /* MovementScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD93135E294A46FE0068F88E /* Cells */,
+				DDDDDC39294A38F50061A750 /* MovementScreenViewControllerPresenter.swift */,
+				DDDDDC3A294A38F50061A750 /* MovementScreenViewControllerRouter.swift */,
+				DDDDDC3B294A38F50061A750 /* MovementScreenViewControllerViewController.swift */,
+				DDDDDC3C294A38F50061A750 /* MovementScreenViewControllerProtocols.swift */,
+				DDDDDC3D294A38F50061A750 /* MovementScreenViewControllerInteractor.swift */,
+				DDDDDC3E294A38F50061A750 /* MovementScreenViewControllerViewController.xib */,
+			);
+			path = MovementScreen;
+			sourceTree = "<group>";
+		};
+		DDDDDC35294A389B0061A750 /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDDC45294A39130061A750 /* AccountScreenViewControllerPresenter.swift */,
+				DDDDDC46294A39130061A750 /* AccountScreenViewControllerRouter.swift */,
+				DDDDDC47294A39130061A750 /* AccountScreenViewControllerViewController.swift */,
+				DDDDDC48294A39130061A750 /* AccountScreenViewControllerProtocols.swift */,
+				DDDDDC49294A39130061A750 /* AccountScreenViewControllerInteractor.swift */,
+				DDDDDC4A294A39130061A750 /* AccountScreenViewControllerViewController.xib */,
+			);
+			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		DDDDDC36294A38A60061A750 /* OptionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDDC51294A392B0061A750 /* OptionsScreenViewControllerPresenter.swift */,
+				DDDDDC52294A392B0061A750 /* OptionsScreenViewControllerRouter.swift */,
+				DDDDDC53294A392B0061A750 /* OptionsScreenViewControllerViewController.swift */,
+				DDDDDC54294A392B0061A750 /* OptionsScreenViewControllerProtocols.swift */,
+				DDDDDC55294A392B0061A750 /* OptionsScreenViewControllerInteractor.swift */,
+				DDDDDC56294A392B0061A750 /* OptionsScreenViewControllerViewController.xib */,
+			);
+			path = OptionsScreen;
+			sourceTree = "<group>";
+		};
+		DDDDDC38294A38C70061A750 /* UserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDDC5D294A39790061A750 /* UserScreenViewControllerPresenter.swift */,
+				DDDDDC5E294A39790061A750 /* UserScreenViewControllerRouter.swift */,
+				DDDDDC5F294A39790061A750 /* UserScreenViewControllerViewController.swift */,
+				DDDDDC60294A39790061A750 /* UserScreenViewControllerProtocols.swift */,
+				DDDDDC61294A39790061A750 /* UserScreenViewControllerInteractor.swift */,
+				DDDDDC62294A39790061A750 /* UserScreenViewControllerViewController.xib */,
+			);
+			path = UserScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9A6B4A294A2F3500F2CEFB /* ControlGastos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9A6B5F294A2F3900F2CEFB /* Build configuration list for PBXNativeTarget "ControlGastos" */;
+			buildPhases = (
+				7E594266EB6E0C52B5FA29B3 /* [CP] Check Pods Manifest.lock */,
+				DD9A6B47294A2F3500F2CEFB /* Sources */,
+				DD9A6B48294A2F3500F2CEFB /* Frameworks */,
+				DD9A6B49294A2F3500F2CEFB /* Resources */,
+				42354C6634662658AF0441CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControlGastos;
+			productName = ControlGastos;
+			productReference = DD9A6B4B294A2F3500F2CEFB /* ControlGastos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9A6B43294A2F3500F2CEFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DD9A6B4A294A2F3500F2CEFB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = DD9A6B46294A2F3500F2CEFB /* Build configuration list for PBXProject "ControlGastos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9A6B42294A2F3500F2CEFB;
+			productRefGroup = DD9A6B4C294A2F3500F2CEFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9A6B4A294A2F3500F2CEFB /* ControlGastos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9A6B49294A2F3500F2CEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD931362294A47500068F88E /* MovementTableViewCell.xib in Resources */,
+				DDDDDC5C294A392B0061A750 /* OptionsScreenViewControllerViewController.xib in Resources */,
+				DDDDDC44294A38F50061A750 /* MovementScreenViewControllerViewController.xib in Resources */,
+				DD9A6B5B294A2F3900F2CEFB /* LaunchScreen.storyboard in Resources */,
+				DD9A6B58294A2F3900F2CEFB /* Assets.xcassets in Resources */,
+				DD9A6B56294A2F3500F2CEFB /* Main.storyboard in Resources */,
+				DDDDDC50294A39130061A750 /* AccountScreenViewControllerViewController.xib in Resources */,
+				DDDDDC68294A39790061A750 /* UserScreenViewControllerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42354C6634662658AF0441CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlGastos/Pods-ControlGastos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlGastos/Pods-ControlGastos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlGastos/Pods-ControlGastos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E594266EB6E0C52B5FA29B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ControlGastos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9A6B47294A2F3500F2CEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDDDC65294A39790061A750 /* UserScreenViewControllerViewController.swift in Sources */,
+				DDDDDC4C294A39130061A750 /* AccountScreenViewControllerRouter.swift in Sources */,
+				DDDDDC4F294A39130061A750 /* AccountScreenViewControllerInteractor.swift in Sources */,
+				DDDDDC5B294A392B0061A750 /* OptionsScreenViewControllerInteractor.swift in Sources */,
+				DDDDDC4D294A39130061A750 /* AccountScreenViewControllerViewController.swift in Sources */,
+				DD931361294A47500068F88E /* MovementTableViewCell.swift in Sources */,
+				DDDDDC59294A392B0061A750 /* OptionsScreenViewControllerViewController.swift in Sources */,
+				DDDDDC4E294A39130061A750 /* AccountScreenViewControllerProtocols.swift in Sources */,
+				DDDDDC43294A38F50061A750 /* MovementScreenViewControllerInteractor.swift in Sources */,
+				DDDDDC66294A39790061A750 /* UserScreenViewControllerProtocols.swift in Sources */,
+				DDDDDC33294A38080061A750 /* TabBarViewController.swift in Sources */,
+				DD9A6B53294A2F3500F2CEFB /* ViewController.swift in Sources */,
+				DDDDDC57294A392B0061A750 /* OptionsScreenViewControllerPresenter.swift in Sources */,
+				DDDDDC67294A39790061A750 /* UserScreenViewControllerInteractor.swift in Sources */,
+				DDDDDC40294A38F50061A750 /* MovementScreenViewControllerRouter.swift in Sources */,
+				DD9A6B4F294A2F3500F2CEFB /* AppDelegate.swift in Sources */,
+				DDDDDC63294A39790061A750 /* UserScreenViewControllerPresenter.swift in Sources */,
+				DDDDDC64294A39790061A750 /* UserScreenViewControllerRouter.swift in Sources */,
+				DDDDDC41294A38F50061A750 /* MovementScreenViewControllerViewController.swift in Sources */,
+				DDDDDC42294A38F50061A750 /* MovementScreenViewControllerProtocols.swift in Sources */,
+				DD9A6B51294A2F3500F2CEFB /* SceneDelegate.swift in Sources */,
+				DDDDDC3F294A38F50061A750 /* MovementScreenViewControllerPresenter.swift in Sources */,
+				DDDDDC58294A392B0061A750 /* OptionsScreenViewControllerRouter.swift in Sources */,
+				DDDDDC4B294A39130061A750 /* AccountScreenViewControllerPresenter.swift in Sources */,
+				DDDDDC5A294A392B0061A750 /* OptionsScreenViewControllerProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD9A6B54294A2F3500F2CEFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9A6B55294A2F3500F2CEFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD9A6B59294A2F3900F2CEFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9A6B5A294A2F3900F2CEFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9A6B5D294A2F3900F2CEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD9A6B5E294A2F3900F2CEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9A6B60294A2F3900F2CEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F872D562D044A2711347C687 /* Pods-ControlGastos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ControlGastos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaptla.ControlGastos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD9A6B61294A2F3900F2CEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849658B2FCAD57EDF3B86210 /* Pods-ControlGastos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ControlGastos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaptla.ControlGastos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9A6B46294A2F3500F2CEFB /* Build configuration list for PBXProject "ControlGastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9A6B5D294A2F3900F2CEFB /* Debug */,
+				DD9A6B5E294A2F3900F2CEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9A6B5F294A2F3900F2CEFB /* Build configuration list for PBXNativeTarget "ControlGastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9A6B60294A2F3900F2CEFB /* Debug */,
+				DD9A6B61294A2F3900F2CEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9A6B43294A2F3500F2CEFB /* Project object */;
+}
